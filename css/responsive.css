@@ -1,0 +1,819 @@
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background: #f7f6f9;
+    height: 100px;
+    position: fixed;
+    z-index: 101;
+    box-shadow: rgb(221, 221, 221) 0px 5px 15px 0px;
+    top: 0;
+  }
+  section.hero_section {
+    position: relative;
+    margin: 200px 0px 0px 0px;
+  }
+  .header2 {
+    display: none;
+  }
+  .right-10px {
+    right: 0px !important;
+    transition: all 0.5s ease;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .navlink {
+    top: 0;
+    position: fixed;
+    right: -500px;
+    transition: all 0.6s linear !important;
+  }
+  .navlink ul {
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    width: 340px;
+    background: rgb(0, 0, 0);
+    height: 550px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+  }
+  .navlink ul img {
+    margin: 20px auto;
+    display: block;
+    padding-right: 55px;
+  }
+  .navHide {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .navHideRotate360deg {
+    /* animation-name: xiconRotate;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+
+    transform: rotate(360deg);
+  }
+  /* @keyframes xiconRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */
+  .navHideRotate90deg {
+    animation-name: xiconRotate;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+  }
+  @keyframes xiconRotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .navHide:hover {
+    color: #84d19f;
+    animation: rotate180deg;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  @keyframes rotate180deg {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .navlink ul li {
+    padding: 20px;
+    height: 20px;
+    margin-left: 0px;
+    display: block;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: rgb(24, 23, 23) 0px 2px 1px 0px;
+  }
+  .navlink ul li a {
+    padding: 0px;
+    height: 30px;
+    display: block;
+    color: #fff;
+  }
+  .course_text {
+    width: 410px;
+    margin-top: 15px;
+    margin-left: -28px;
+  }
+
+  .navlink ul li:nth-child(6) {
+    width: 100%;
+    height: 10px;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
+    position: relative;
+    /* top: 200px; */
+    top: 0px;
+    /* z-index: 100; */
+    background: black;
+  }
+  i.fa-solid.fa-angle-up.angle_up {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    transform: rotate(90deg);
+  }
+  i.fa-solid.fa-angle-down.icon.icon_rotate {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    transform: rotate(270deg);
+  }
+  .rotate90deg {
+    transform: rotate(360deg) !important;
+  }
+  .blog_wrapper:hover .icon_rotate {
+    transform: rotate(0deg);
+  }
+  ul.submenu {
+    top: 50px;
+    height: 230px;
+    transform: scaleY(1);
+    position: absolute;
+    box-shadow: rgb(221, 221, 221) 0px 0px 0px 0px;
+  }
+  ul.submenu li:hover {
+    background-color: #000000;
+  }
+  ul.submenu li:hover .submenu_A_hover {
+    padding-left: 0px;
+    color: var(--primary_color);
+    padding-left: 10px;
+  }
+  ul.submenu li:hover a:after {
+    transform: scale(0);
+    opacity: 0;
+  }
+  ul.submenu li {
+    width: 100%;
+  }
+  ul.submenu li a {
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .socialMediaLink {
+    display: block;
+  }
+  .socialMediaLink {
+    width: 285px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+  }
+  .contact_wrapper {
+    background: #000000 !important;
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top: 280px;
+    transition: all 0.4s ease;
+  }
+  .contactWrapper1 {
+    top: 480px;
+  }
+  .socialMediaLink .contactIconWrapper {
+    background-color: #84d19f;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+  }
+  .socialMediaLink .contactIconWrapper i {
+    font-size: 20px;
+    /* border-radius: 100%; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: black;
+    background-color: #84d19f;
+    position: relative;
+    right: 2px;
+  }
+  .category {
+    margin-left: 0;
+  }
+  i.fa-solid.fa-angle-down.CategoriesIcon {
+    left: -15px;
+  }
+  .headerStyleRight {
+    position: absolute;
+    left: 300px;
+    /* display: none; */
+  }
+  .bar_icon {
+    position: absolute;
+    cursor: pointer;
+    right: -170px;
+  }
+  .bar_icon i {
+    color: #84d19f;
+    font-size: 45px;
+  }
+
+  section.second_main {
+    top: -133px;
+  }
+
+  .lifetime_wrapper {
+    flex-direction: column;
+  }
+  .lifetime_access {
+    width: 100%;
+    justify-content: flex-start;
+    height: 150px;
+    border-bottom: 1px solid #ddd;
+  }
+  .lifetime_text {
+    width: 700px;
+    padding-left: 85px;
+  }
+
+  .lifeAccess_shapeWrapper {
+    left: 12px;
+  }
+  .third_section {
+    margin-top: -70px;
+  }
+  .identity_image_shape {
+    left: 60px;
+    top: -8px;
+  }
+  .our_identity_wrapper {
+    flex-direction: column;
+  }
+  .identy_leftsideimage_wrapper {
+    width: 500px;
+    height: 460px;
+    margin-top: 15px;
+  }
+  .auto_conteinar {
+    width: 670px;
+  }
+  .third_section {
+    height: 1070px;
+  }
+  .alloffer_controlar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section.OfferSection {
+    height: 1600px;
+  }
+  .absolute_bigimage {
+    width: 565px;
+    left: 12px;
+    background-image: url(instructor-video-gallery-img1.png);
+  }
+  section.allCourses {
+    margin-top: 50px;
+  }
+
+  .allcoursr_headertext h1 {
+    text-align: center;
+  }
+  .absolute_wrapper {
+    width: 567px;
+    position: relative;
+    height: 600px;
+    background: rgb(132, 209, 159);
+    left: 72px;
+  }
+  .allOfferNumber {
+    top: 750px;
+  }
+  .courses_box {
+    flex-direction: column;
+    height: 417px;
+    justify-content: flex-start;
+    width: 545px;
+    align-items: center;
+  }
+  .number_star1 {
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 10px;
+  }
+  .mixed1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .mixed1 i {
+  }
+  .mixed1 span {
+    margin-left: 11px;
+  }
+  section.courseAccess {
+    margin-top: 1200px;
+  }
+  .enrolledIcon {
+    display: none;
+  }
+
+  .enroll_people {
+    display: none;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  /* .logo {
+    width: 160px;
+  }  */
+  .header_styleright_image {
+    display: none;
+  }
+
+  .header_styleRight_icon {
+    display: none;
+  }
+  .category {
+    display: none;
+  }
+  .image_hole_wrapper {
+    margin-top: 15px;
+  }
+  .studyresoneanimi1 {
+    width: 100%;
+  }
+
+  .studyresoneanimi2 {
+    width: 100%;
+  }
+
+  .studyresoneanimi3 {
+    width: 100%;
+  }
+  .allcourse_highlight {
+    margin-left: 0;
+  }
+
+  .review_btn.btn1 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 242px;
+    padding: 30px;
+  }
+  .reviewBlanck {
+    display: none;
+  }
+
+  .reviewBlanck1 {
+    display: none;
+  }
+
+  .reviewbodywrapper {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .hole_body_review_wrapper {
+    flex-direction: column;
+  }
+  .small_curcle.allcourse_circle {
+    display: none;
+  }
+
+  section.review_section {
+    height: 1040px;
+    margin-left: 24px;
+  }
+  footer.footer_section {
+    margin-top: 140px;
+  }
+  .footercontact_wrapper {
+    padding: 60px 0 0 0;
+  }
+}
+@media screen and (max-width: 740px) {
+  .navlink {
+    top: 0;
+    position: fixed;
+    right: -500px;
+    transition: all 0.6s linear !important;
+  }
+  .bar_icon {
+    right: -150px;
+  }
+  .right-10px {
+    left: 400px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 715px) {
+  .bar_icon {
+    right: -120px;
+  }
+  .right-10px {
+    left: 365px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 685px) {
+  .bar_icon {
+    right: -95px;
+  }
+  .right-10px {
+    left: 340px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 660px) {
+  .bar_icon {
+    right: -75px;
+  }
+  .right-10px {
+    left: 320px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bar_icon {
+    right: -45px;
+  }
+  .right-10px {
+    left: 295px !important;
+    transition: all 0.6s linear !important;
+  }
+  .slide_image3 {
+  }
+
+  .slide_image {
+    display: none;
+  }
+
+  .right_slide_image {
+    display: none;
+  }
+  .identity_text h1 {
+    width: 510px;
+    font-size: 30px;
+  }
+  .absolute_wrapper {
+    left: 35px;
+  }
+  .absolute_bigimage {
+    left: 1px;
+  }
+  .absolute_bigimage {
+    left: 1px;
+  }
+
+  .allcoursr_headertext h1 {
+    font-size: 40px;
+  }
+
+  .allcoursr_headertext {
+    width: 70%;
+    margin: 0 auto;
+    margin-left: 75px;
+  }
+  .absolute_bigimage {
+    left: 1px;
+  }
+
+  .allcoursr_headertext h1 {
+    font-size: 40px;
+  }
+
+  .allcoursr_headertext {
+    width: 70%;
+    margin: 0 auto;
+    margin-left: 75px;
+  }
+
+  .courses_box {
+    width: 500px;
+    margin-left: -35px;
+  }
+  .course_accesslist {
+    width: 470px;
+  }
+
+  .courseAccessBtn {
+    top: -115px;
+    position: relative;
+    left: -40px;
+  }
+
+  .accesslistdetails ul {
+    font-size: 20px;
+  }
+  .coursesbtn {
+    position: relative;
+    top: -130px;
+    left: -25px;
+  }
+
+  /* .sub_title1 {
+    display: none;
+  } */
+
+  /* .title_big {
+    display: none;
+  } */
+  .cartifid_wrapper {
+    left: 350px;
+  }
+  .slide_image2 {
+    top: 50px;
+    left: 220px;
+  }
+
+  .career_slide {
+    right: -10px;
+  }
+
+  .right_animi_image {
+    display: none;
+  }
+
+  .right_slide_image1 {
+    display: none;
+  }
+
+  .learners {
+    top: 140px;
+    left: 240px;
+  }
+  .slide_image5 {
+    display: none;
+  }
+
+  .student_counting {
+    display: none;
+  }
+
+  .right_side_up_down_arrow_btn {
+    display: none;
+  }
+  .title_big h2 span:nth-child(1) {
+    position: absolute;
+    left: 0;
+  }
+
+  .hero_section_left {
+    left: 0;
+  }
+
+  .title_big h2 span:nth-child(2) {
+    position: absolute;
+    left: 225px;
+    top: 5px;
+  }
+
+  .title_big h2 span:nth-child(3) {
+    position: absolute;
+    top: 65px;
+  }
+
+  .title_big h2 {
+    font-size: 43px;
+  }
+
+  .btn1 button {
+    top: 120px;
+  }
+  .first_text {
+    top: 150px;
+  }
+  .allcoursr_headertext.allcoursehead h1 {
+    font-size: 29px;
+  }
+
+  .studyresoneanimi1.studayAnimi1 {
+    width: 70%;
+    height: 290px;
+  }
+  .studyresoneanimi2.studayAnimi2 {
+    width: 70%;
+    height: 290px;
+  }
+
+  .studyresoneanimi3.studayAnimi3 {
+    width: 70%;
+    height: 290px;
+  }
+
+  .studyReasone_box {
+    height: 290px;
+    flex-direction: column;
+  }
+
+  .studyreasoneNumber {
+    position: absolute;
+    top: 130px;
+  }
+
+  .studyreasone_text_down {
+    text-align: center;
+  }
+  .reviewbodywrapper1 {
+    display: none;
+  }
+  section.review_section {
+    margin-left: 0;
+  }
+
+  .review_header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .review_btn.btn1 button {
+    position: relative;
+    top: -18px;
+    padding: 23px;
+    left: -35px;
+    width: 220px;
+  }
+  section.review_section {
+    margin-left: 0;
+  }
+
+  .review_header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .review_btn.btn1 button {
+    position: relative;
+    top: -18px;
+    padding: 23px;
+    left: -35px;
+    width: 220px;
+  }
+
+  .reviewbodywrapper {
+    width: 80%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+    left: -21px;
+  }
+  .companyname_section h3 {
+  }
+
+  .companyname_section h1 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .compyAccessBtn {
+    position: relative;
+    top: -120px;
+    left: -5px;
+  }
+
+  footer.footer_section {
+    position: relative;
+    top: 200px;
+  }
+  footer.footer_section {
+    height: 1470px;
+  }
+  .footercontact_wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 75px;
+    gap: 30px;
+  }
+  section.review_section {
+    height: 760px;
+  }
+  footer.copyright {
+    position: relative;
+  }
+  .copyright_wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+  }
+
+  .copyrightsecond {
+    padding-right: 0;
+  }
+
+  .copyrightFirst {
+    padding-left: 0;
+  }
+
+  footer.copyright {
+    position: relative;
+    top: 195px;
+    height: 125px;
+  }
+  .companyName {
+    width: 100%;
+    padding-right: 35px;
+  }
+
+  .company_namerwrapper {
+    flex-direction: column;
+  }
+
+  section.companyname_section {
+    margin-bottom: 780px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .bar_icon {
+    right: -15px;
+  }
+  .right-10px {
+    left: 260px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  .bar_icon {
+    right: 20px;
+  }
+  .right-10px {
+    left: 235px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 545px) {
+  .bar_icon {
+    right: 50px;
+  }
+  .right-10px {
+    left: 200px !important;
+    transition: all 0.6s linear !important;
+  }
+}
+@media screen and (max-width: 515px) {
+  .bar_icon {
+    right: 75px;
+  }
+  .right-10px {
+    left: 165px !important;
+    transition: all 0.6s linear !important;
+  }
+}
